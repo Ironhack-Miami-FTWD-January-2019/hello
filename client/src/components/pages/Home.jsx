@@ -10,8 +10,9 @@ export default class Home extends Component {
     console.log(api.isLoggedIn())
     console.log(api.getLocalStorageUser())
 
-    Axios.get('http://localhost:5000/api/whatever',).then(res=>{
-      // console.log(res)
+    Axios.get('https://superduperubercool.herokuapp.com/api/whatever',).then(res=>{
+       console.log(res)
+       res.json({})
     })
 
   }
