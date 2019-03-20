@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import api from '../../api'
+import { SERVER_URL } from '../../config'
 
 export default class Home extends Component {
 
@@ -10,9 +11,9 @@ export default class Home extends Component {
     console.log(api.isLoggedIn())
     console.log(api.getLocalStorageUser())
 
-    Axios.get('https://superduperubercool.herokuapp.com/api/whatever',).then(res=>{
-       console.log(res)
-       res.json({})
+    Axios.get(`${SERVER_URL}/whatever`).then(res=>{
+       console.log(132423142, res)
+       //res.json({})
     })
 
   }
