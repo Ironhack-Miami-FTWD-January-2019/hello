@@ -8,8 +8,8 @@ export default class Home extends Component {
   
   componentDidMount(){
 
-    console.log(api.isLoggedIn())
-    console.log(api.getLocalStorageUser())
+    //console.log(api.isLoggedIn())
+    //console.log(api.getLocalStorageUser())
 
     Axios.get(`${SERVER_URL}/whatever`).then(res=>{
        console.log(132423142, res)
