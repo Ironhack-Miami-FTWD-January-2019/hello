@@ -23,6 +23,7 @@ app.use(nocache())
 // Set "Access-Control-Allow-Origin" header
 app.use(cors({
   // origin: (origin, cb) => {
+  //   console.log('ORIGIN',origin)
   //   cb(null, origin && origin.startsWith('http://localhost:'))
   // },
   // optionsSuccessStatus: 200,
